@@ -3,9 +3,10 @@ import requests
 from datetime import datetime, timedelta
 
 
-API_BASE = "http://localhost:8000"
+API_BASE = "https://booking-agent-3.onrender.com"
 CHAT_ENDPOINT = f"{API_BASE}/chat"
 AVAILABILITY_ENDPOINT = f"{API_BASE}/availability"
+
 
 st.set_page_config(page_title="TailorTalk AI Booking Assistant", page_icon="🧵")
 st.title("🧵 TailorTalk AI Booking Assistant")
