@@ -3,6 +3,8 @@ from pydantic import BaseModel
 from agent import handle_message
 from calendar_service import compute_free_slots
 from datetime import datetime, timedelta
+from fastapi.responses import JSONResponse
+
 import re
 
 app = FastAPI()
