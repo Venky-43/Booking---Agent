@@ -6,7 +6,13 @@ from datetime import datetime, timedelta
 import re
 
 app = FastAPI()
-
+@app.get("/")
+def root():
+    return JSONResponse(
+        content={
+            "message": "✅ This is the Booking Agent API! Use /chat (POST) and /availability (GET) endpoints. The frontend is here: https://booking---agent-hec2ccqjmvypajv8pgheau.streamlit.app"
+        }
+    )
 class Message(BaseModel):
     user_message: str
 
